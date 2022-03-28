@@ -1,0 +1,29 @@
+<h3 class='text-center p-4'>Servicio Web</h3>
+
+
+  
+<div class="container p-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <button class="btn btn-success btn-lg mx-auto" type="button">New ToDo</button>
+</div>
+  
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+	  <th scope="col"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+	{{#each todos}}
+		{{>TodosItem item=this}}
+	{{/each}}
+
+  {{>modalNewTodo}}
+  {{>modalDelete}}
+  </tbody>
+</table>

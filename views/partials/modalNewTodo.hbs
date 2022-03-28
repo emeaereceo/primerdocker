@@ -1,0 +1,50 @@
+<!-- Modal -->
+<div
+	class='modal fade'
+	id='exampleModal'
+	tabindex='-1'
+	aria-labelledby='exampleModalLabel'
+	aria-hidden='true'
+>
+	<div class='modal-dialog modal-dialog-centered'>
+		<div class='modal-content'>
+			<div class='modal-header bg-primary'>
+				<h5 class='modal-title text-white' id='exampleModalLabel'>Crear nuevo
+					TODO</h5>
+			</div>
+			<div class='modal-body'>
+				<form action='' id='formulario'>
+					<div class='mb-3 form-group'>
+						{{! <label for='exampleFormControlInput1' class='form-label'></label> }}
+						<input
+							type='text'
+							class='form-control'
+							id='add-Title'
+							placeholder='Title'
+						/>
+					</div>
+					<div class='mb-3 form-group'>
+						{{! <label for='exampleFormControlTextarea1' class='form-label'>Example
+						textarea</label> }}
+						<textarea
+							class='form-control'
+							id='add-Desc'
+							placeholder='Description'
+							rows='3'
+						></textarea>
+					</div>
+				</form>
+			</div>
+			<div class='modal-footer'>
+				<button type='button' class='btn btn-secondary' data-bs-dismiss='modal'>
+					Cancelar
+				</button>
+				<button
+					id='add-btn'
+					type='submit'
+					class='btn btn-primary'
+				>Guardar</button>
+			</div>
+		</div>
+	</div>
+</div>
